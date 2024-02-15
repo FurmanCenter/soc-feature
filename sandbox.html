@@ -1,31 +1,30 @@
 <style>
     #intro {
-        max-width: 40rem;
-        margin: 1rem auto;
+        max-width: 100%;
+        padding: 1rem;
         text-align: center;
-    }
-
-    .intro__hed {
-        font-size: 2em;
-        margin: 2rem auto 0.5rem auto;
+        margin-bottom: 100px;
+        background-color: #2E6072;
     }
 
     .intro__dek {
         color: #8a8a8a;
-    }
-
-    #intro {
-        margin-bottom: 100px;
+        text-align: center;
     }
 
     #outro {
         margin-top: 100px;
         text-align: left;
+        padding: 1rem;
     }
 
     #scrolly {
         position: relative;
         background-color: #f3f3f3;
+        padding: 1rem;
+    }
+
+    #report {
         padding: 1rem;
     }
 
@@ -50,7 +49,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url('images/island.jpg');
+        background-image: url('/data/images/island.jpg');
         background-size: cover;
         background-position: center center;
     }
@@ -59,6 +58,7 @@
         font-size: 8rem;
         font-weight: 900;
         color: #fff;
+        margin: 0 0 0 0;
     }
 
     .step {
@@ -83,17 +83,30 @@
         font-size: 1.5rem;
         background-color: rgba(0, 154, 179, 0.8);
     }
+
+    .soc-content {
+        text-align: left;
+    }
+
+    .intro__dek p{
+        color: #8a8a8a;
+        margin-top: 1.5em;
+    }
+
 </style>
 
 <main>
-    <div class="soc-heading">
-        <p>State of the City 2023</p>
-        <h1>Furman Feature Example</h1>
-        <p class="intro__dek">
-            Start scrolling to see how it works.
-        </p>
+    <header class="soc-header">
+        <div class="wrapper">
+            <div class="soc-heading">
+                <p>State of the City 2023</p>
+                <h1>Furman Feature Example</h1>
+            </div>
+        </div>
+    </header>
+    <div class="intro__dek">
+        <p>Start scrolling to see how it works.</p>
     </div>
-
     <section id="scrolly">
         <div class="sticky-thing">
             <p>step 0</p>
@@ -117,44 +130,72 @@
 
     <section id="outro">
         <p>
-            Donna will write beautiful insightful narrative that goes in the following paragraphs. Our audiences are blown away with the elegant, clear prose. They leave feeling better informed about the issues and ready to advance the debate on housing and neighborhoods.
+            Donna will write beautiful insightful narrative that goes in the following paragraphs. Our audiences are
+            blown away with the elegant, clear prose. They leave feeling better informed about the issues and ready to
+            advance the debate on housing and neighborhoods.
         </p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id tortor vel mi efficitur pellentesque. Etiam at molestie odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean rhoncus metus eu nulla venenatis ullamcorper. Phasellus vitae cursus nisl, id interdum dolor. Nullam a ex sit amet lorem iaculis hendrerit. Nulla sollicitudin finibus mauris tempor elementum. Etiam fringilla, eros tincidunt egestas laoreet, velit tortor malesuada massa, vel rhoncus arcu massa in quam. Aenean hendrerit massa non leo tristique ultrices.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id tortor vel mi efficitur pellentesque. Etiam
+            at molestie odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean rhoncus metus eu
+            nulla venenatis ullamcorper. Phasellus vitae cursus nisl, id interdum dolor. Nullam a ex sit amet lorem
+            iaculis hendrerit. Nulla sollicitudin finibus mauris tempor elementum. Etiam fringilla, eros tincidunt
+            egestas laoreet, velit tortor malesuada massa, vel rhoncus arcu massa in quam. Aenean hendrerit massa non
+            leo tristique ultrices.
 
         </p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu mi erat. Nullam scelerisque neque venenatis augue egestas suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus nunc, elementum non ultricies a, varius a neque. Sed at egestas nunc. Vivamus nec erat vitae sem porttitor auctor vitae in lectus. Mauris suscipit elit a tempor dapibus. Curabitur porttitor vel leo et iaculis. Pellentesque dapibus eu sem vitae molestie. Integer at lectus quis dui pharetra lobortis. Morbi et nisi massa. Cras accumsan mollis mi vel mollis. Duis eu urna id nisi tincidunt ultricies ac sed lectus. Ut posuere finibus rutrum. Etiam metus neque, rutrum ut sem ac, egestas sollicitudin enim. Cras egestas metus nec elit sodales, ac fermentum orci volutpat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu mi erat. Nullam scelerisque neque
+            venenatis augue egestas suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus
+            nunc, elementum non ultricies a, varius a neque. Sed at egestas nunc. Vivamus nec erat vitae sem porttitor
+            auctor vitae in lectus. Mauris suscipit elit a tempor dapibus. Curabitur porttitor vel leo et iaculis.
+            Pellentesque dapibus eu sem vitae molestie. Integer at lectus quis dui pharetra lobortis. Morbi et nisi
+            massa. Cras accumsan mollis mi vel mollis. Duis eu urna id nisi tincidunt ultricies ac sed lectus. Ut
+            posuere finibus rutrum. Etiam metus neque, rutrum ut sem ac, egestas sollicitudin enim. Cras egestas metus
+            nec elit sodales, ac fermentum orci volutpat.
 
         </p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta pellentesque tellus, laoreet vulputate mi euismod vitae. Mauris sagittis tincidunt neque, ac ultrices urna lobortis sed. Proin euismod risus a tristique lacinia. Pellentesque efficitur, risus in elementum volutpat, urna risus volutpat lacus, a ullamcorper augue est id orci. Ut ornare dignissim condimentum. Nam in massa neque. Etiam volutpat condimentum urna, et porta turpis eleifend ut.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta pellentesque tellus, laoreet
+            vulputate mi euismod vitae. Mauris sagittis tincidunt neque, ac ultrices urna lobortis sed. Proin euismod
+            risus a tristique lacinia. Pellentesque efficitur, risus in elementum volutpat, urna risus volutpat lacus, a
+            ullamcorper augue est id orci. Ut ornare dignissim condimentum. Nam in massa neque. Etiam volutpat
+            condimentum urna, et porta turpis eleifend ut.
 
         </p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec ullamcorper tortor. Nunc sagittis pulvinar molestie. Donec id tempus lacus. Aliquam mattis velit ac elit mattis, eget aliquam ante luctus. Nunc massa erat, efficitur id dolor id, egestas fermentum lacus. Fusce odio arcu, elementum in commodo at, volutpat et sem. Duis vulputate lacus a mauris gravida tristique. Proin ornare metus et massa tincidunt, a volutpat eros maximus. Suspendisse sit amet metus et risus sagittis pellentesque ac a lacus. In tempus nibh quis mi rutrum, vel pulvinar nibh ornare. Donec hendrerit arcu non quam ultricies, condimentum consectetur arcu dapibus. Ut placerat ex at nulla mollis, eu finibus sapien sagittis. Ut nec dictum mauris. Ut congue lorem nec finibus gravida.
-        </p>
-    </section>
-    <div class="soc-content">
-        <aside class="soc-aside">
-            <ul class="soc-toc">
-                <li>
-                    <a href="#introduction">Introduction</a>
-                </li>
-                <li>
-                    <a href="#findings">Findings</a>
-                </li>
-                <li>
-                    <a href="#conclusion">Conclusion</a>
-                </li>               
-            </ul>
-        </aside>
-        <h2 id="introduction">The Rest of the Report begins here</h2>
-        <p dir="ltr">
-            This is where we will begin writing in a style that is rigorous, academic, and clear - describing the methods and detailed findings of our report.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec ullamcorper tortor. Nunc sagittis
+            pulvinar molestie. Donec id tempus lacus. Aliquam mattis velit ac elit mattis, eget aliquam ante luctus.
+            Nunc massa erat, efficitur id dolor id, egestas fermentum lacus. Fusce odio arcu, elementum in commodo at,
+            volutpat et sem. Duis vulputate lacus a mauris gravida tristique. Proin ornare metus et massa tincidunt, a
+            volutpat eros maximus. Suspendisse sit amet metus et risus sagittis pellentesque ac a lacus. In tempus nibh
+            quis mi rutrum, vel pulvinar nibh ornare. Donec hendrerit arcu non quam ultricies, condimentum consectetur
+            arcu dapibus. Ut placerat ex at nulla mollis, eu finibus sapien sagittis. Ut nec dictum mauris. Ut congue
+            lorem nec finibus gravida.
         </p>
     </section>
 </main>
+    <section id="report">
+        <div class="soc-content">
+            <aside class="soc-aside">
+                <ul class="soc-toc">
+                    <li>
+                        <a href="#introduction">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#findings">Findings</a>
+                    </li>
+                    <li>
+                        <a href="#conclusion">Conclusion</a>
+                    </li>
+                </ul>
+            </aside>
+            <h2 id="introduction">The Rest of the Report begins here</h2>
+            <p dir="ltr">
+                This is where we will begin writing in a style that is rigorous, academic, and clear - describing the
+                methods and detailed findings of our report.
+            </p>
+        </div>
+    </section>
 
 <!-- <div class='debug'></div> -->
 <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
@@ -185,7 +226,7 @@
         sticky.querySelector("p").innerText = `step ${el.dataset.step}`;
         // sticky.style.backgroundColor = el.dataset.color;
         //sticky.querySelector("p").style.fontSize = `${el.dataset.step}rem`;
-        sticky.style.backgroundImage = `url(images/${el.dataset.image}.jpg)`;
+        sticky.style.backgroundImage = `url(/data/images/${el.dataset.image}.jpg)`;
         console.log(el.dataset.image)
     }
 
